@@ -25,7 +25,7 @@ $(document).ready(function () {
             $.each(data, function (key, value) {
                 if (start == value.name) {
                     startId = parseInt(key, 10);
-                    startBranch = data[key]['branch'];
+                    startBranch = parseInt(data[key]['branch'], 10);
                 }
                 if (finish == value.name) {
                     finishId = parseInt(key, 10);
